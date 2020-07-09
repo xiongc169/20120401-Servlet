@@ -7,3 +7,6 @@
   $END$
   </body>
 </html>
+
+<%-- http://localhost:8080/ --%>
+<%-- http://localhost:8080/index.jsp --%>
