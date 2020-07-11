@@ -1,3 +1,5 @@
+package com.yoong.servlet;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -7,7 +9,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- * @Desc AnnoServlet
+ * @Desc com.yoong.servlet.AnnoServlet
  * http://localhost:8080/annoServlet
  * <p>
  * @Author yoong
@@ -24,10 +26,10 @@ public class AnnoServlet extends HttpServlet {
         PrintStream printStream = new PrintStream(resp.getOutputStream());
         printStream.println("<html>");
         printStream.println("<head>");
-        printStream.println("<title>AnnoServlet " + name + "</title>");
+        printStream.println("<title>com.yoong.servlet.AnnoServlet " + name + "</title>");
         printStream.println("</head>");
         printStream.println("<body>");
-        printStream.println("AnnoServlet: Your name is " + name);
+        printStream.println("com.yoong.servlet.AnnoServlet: Your name is " + name);
         printStream.println("</body>");
         printStream.println("</html>");
     }

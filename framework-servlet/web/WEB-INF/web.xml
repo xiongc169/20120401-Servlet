@@ -5,7 +5,7 @@
     <!-- http://localhost:8080/first -->
     <servlet>
         <servlet-name>first</servlet-name>
-        <servlet-class>FirstServlet</servlet-class>
+        <servlet-class>com.yoong.servlet.FirstServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>first</servlet-name>
@@ -15,7 +15,7 @@
     <!-- http://localhost:8080/helloOpenAPI -->
     <servlet>
         <servlet-name>helloOpenAPI</servlet-name>
-        <servlet-class>HelloOpenAPI</servlet-class>
+        <servlet-class>com.yoong.servlet.HelloOpenAPI</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>helloOpenAPI</servlet-name>
@@ -25,7 +25,7 @@
     <!-- http://localhost:8080/add -->
     <servlet>
         <servlet-name>add</servlet-name>
-        <servlet-class>AddServlet</servlet-class>
+        <servlet-class>com.yoong.servlet.AddServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>add</servlet-name>

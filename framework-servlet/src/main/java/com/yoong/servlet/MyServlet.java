@@ -1,8 +1,10 @@
+package com.yoong.servlet;
+
 import javax.servlet.*;
 import java.io.IOException;
 
 /**
- * @Desc MyServlet
+ * @Desc com.yoong.servlet.MyServlet
  * http://localhost:8080/myServlet
  * <p>
  * @Author yoong

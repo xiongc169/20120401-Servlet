@@ -1,3 +1,5 @@
+package com.yoong.servlet;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -6,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- * @Desc FirstServlet
+ * @Desc com.yoong.servlet.FirstServlet
  * http://localhost:8080/first
  * <p>
  * @Author yoong
@@ -22,10 +24,10 @@ public class FirstServlet extends HttpServlet {
         PrintStream printStream = new PrintStream(resp.getOutputStream());
         printStream.println("<html>");
         printStream.println("<head>");
-        printStream.println("<title>AnnoServlet " + name + "</title>");
+        printStream.println("<title>com.yoong.servlet.AnnoServlet " + name + "</title>");
         printStream.println("</head>");
         printStream.println("<body>");
-        printStream.println("FirstServlet: Your name is " + name);
+        printStream.println("com.yoong.servlet.FirstServlet: Your name is " + name);
         printStream.println("</body>");
         printStream.println("</html>");
     }

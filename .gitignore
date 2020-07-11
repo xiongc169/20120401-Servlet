@@ -32,3 +32,4 @@ RemoteSystemsTempFiles
 .idea/
 .recommenders/
 out/
+classes/
