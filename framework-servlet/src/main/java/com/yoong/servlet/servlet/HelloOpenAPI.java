@@ -1,4 +1,4 @@
-package com.yoong.servlet;
+package com.yoong.servlet.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @Desc com.yoong.servlet.HelloOpenAPI
+ * @Desc HelloOpenAPI
  * http://localhost:8080/helloOpenAPI
  * <p>
  * @Author yoong
@@ -18,7 +18,7 @@ import java.io.IOException;
  */
 public class HelloOpenAPI extends HttpServlet {
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String protocol = req.getProtocol();
         String msg = req.getParameter("name");
         if (protocol.endsWith("1.1")) {
@@ -28,7 +28,7 @@ public class HelloOpenAPI extends HttpServlet {
         }
     }
 
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String protocol = req.getProtocol();
         String msg = req.getParameter("name");
         if (protocol.endsWith("1.1")) {

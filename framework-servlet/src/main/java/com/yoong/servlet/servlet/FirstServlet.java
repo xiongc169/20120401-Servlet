@@ -1,7 +1,6 @@
-package com.yoong.servlet;
+package com.yoong.servlet.servlet;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,8 +8,8 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- * @Desc com.yoong.servlet.AnnoServlet
- * http://localhost:8080/annoServlet
+ * @Desc FirstServlet
+ * http://localhost:8080/first
  * <p>
  * @Author yoong
  * <p>
@@ -18,18 +17,17 @@ import java.io.PrintStream;
  * <p>
  * @Version 1.0
  */
-@WebServlet("/annoServlet")
-public class AnnoServlet extends HttpServlet {
+public class FirstServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("username");
         PrintStream printStream = new PrintStream(resp.getOutputStream());
         printStream.println("<html>");
         printStream.println("<head>");
-        printStream.println("<title>com.yoong.servlet.AnnoServlet " + name + "</title>");
+        printStream.println("<title>FirstServlet " + name + "</title>");
         printStream.println("</head>");
         printStream.println("<body>");
-        printStream.println("com.yoong.servlet.AnnoServlet: Your name is " + name);
+        printStream.println("FirstServlet: Your name is " + name);
         printStream.println("</body>");
         printStream.println("</html>");
     }
